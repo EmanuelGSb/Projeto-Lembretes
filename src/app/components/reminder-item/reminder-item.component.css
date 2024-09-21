@@ -8,7 +8,9 @@
 
 .reminder.tarefa {
   border-left: 5px solid #8644e8;
+  border-bottom: 5px solid #8644e8;
 }
+
 
 .reminder h3{
   display: flex;
