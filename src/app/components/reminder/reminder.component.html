@@ -1,0 +1,4 @@
+<app-new-reminder (onAddReminder)="AddReminder($event)"></app-new-reminder>
+<app-reminder-item *ngFor="let reminder of reminders" [reminder]="reminder" (onDeleteReminder)="deleteReminder($event)"
+  (onToggleConcluido)="toggleConcluido($event)">
+</app-reminder-item>

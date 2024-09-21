@@ -1,0 +1,23 @@
+@if (showNewReminder) {
+<app-btn text="Fechar" color="#8644e8" (btnClick)="ChangeView(false)"></app-btn>
+} @else { <app-btn text="Novo lembrete" color="#5d64e9" (btnClick)="ChangeView(true)"></app-btn>
+}
+
+<form (ngSubmit)="onSubmit()" class="add-form" *ngIf="showNewReminder">
+  <div>
+    <label for=""></label>
+    <input type="text" name="text" class="form-control" placeholder="Adicionar lembrete" id="text"
+      [(ngModel)]="reminder">
+  </div>
+
+  <div class="mb-4">
+    <label for="categoria">categoria</label>
+    <select name="categoria" id="categoria" class="form-select" [(ngModel)]="categoria">
+      <option value="Trabalho">Trabalho</option>
+      <option value="Casa">Casa</option>
+      <option value="Faculdade">Faculdade</option>
+    </select>
+  </div>
+
+  <input type="submit" value="salvar lembrete" class="btn btn-block mb-4">
+</form>

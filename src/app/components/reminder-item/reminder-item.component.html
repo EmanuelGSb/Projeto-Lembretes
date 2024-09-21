@@ -1,0 +1,10 @@
+<div class="reminder" (dblclick)="onToggle(reminder)" [ngClass]="{tarefa: reminder.concluido}">
+  <h3>{{reminder.reminder}}
+
+    <button mat-mini-fab [ngStyle]="{'color': '#5d64e9'}" (click)="onDelete(reminder)">
+      <mat-icon>delete</mat-icon>
+    </button>
+
+  </h3>
+  <p>{{reminder.categoria}}</p>
+</div>
