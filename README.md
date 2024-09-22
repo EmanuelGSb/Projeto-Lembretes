@@ -24,7 +24,6 @@ Este projeto é uma aplicação de lembretes que permite aos usuários adicionar
 ```bash
 git clone <URL-do-repositório>
 cd <nome-do-repositório>
-### 1. Clone o Repositório
 ```
 ### 2. Instale as Dependências
 ```bash
